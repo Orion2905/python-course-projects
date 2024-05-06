@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, Verdana,  sans-serif; /* Famiglia del Font */
+    font-size: 11pt;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1 {
+    color: #00a800; /* Il colore dell'intestazione */
+    font-size: 24pt; /* La dimensione del font dell'intestazione */
+    font-family: Georgia, Times, serif; /* La famiglia di font usata nell'intestazione */
+}
+
+@keyframes color-change {
+    0% {
+        color: blue;
+    }
+    25% {
+        font-size: 40pt;
+    }
+    50% {
+        color: red;
+    }
+    75% {
+        color: green;
+    }
+    100% {
+        color: blue;
+    }
+}
+
+@keyframes hover-effect {
+    0% {
+        font-size: 18pt;
+        color: black;
+    }
+
+    50% {
+        font-size: 26pt;
+        color: rgb(249, 0, 0);
+    }
+
+    100% {
+        font-size: 18pt;
+        color: black;
+    }
+}
+
+h3:hover {
+    animation: hover-effect 3s infinite;
+}
